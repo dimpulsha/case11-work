@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гипермакркет рекламы №1</title>
+    <link href="css/outline.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="site-nav">
+            <ul class="site-nav-list">
+                <li class="site-nav-item"><a href="#">Почему мы</a></li>
+                <li class="site-nav-item"><a href="#">Наши показатели</a></li>
+                <li class="site-nav-item"><a href="#">Наши перспективы</a></li>
+                <li class="site-nav-item"><a href="#">Все о рекламных местах</a></li>
+            </ul>
+        </nav>
+        <!-- Почему-то внесено в nav -->
+        <a href="tel:+799966577866">+7 (999) 665 778 66</a>
+        <a href="#">Заказать рекламное место</a>
+
+    </header>
+    <main>
+        <h1 class="visually-hidden">Заказать рекламные места на сайте гипермаркета № 1</h1>
+        <section class="promo">
+            <h2>Рекламные места на сайте гипермаркета № 1 по регионам</h2>
+            <p>Популярный сегмент, гибкие цены</p>
+            <img src="img/place-img-1.png" alt="Рекламный блок справа" width="554" height="294">
+            <form action="#" method="post">
+                <label for="promo-phone-id" class="visually-hidden">Номер телефона</label>
+                <input type="tel" name="promo-phone" id="promo-phone-id" placeholder="+7">
+                <button type="submit" name="promo-phone-submit" id="promo-phone-submit-id">Заказать</button>
+            </form>
+            <!-- рисунок на странном месте  - выше формы
+            <img src="img/place-img-1.png" alt="Рекламный блок справа" width="554" height="294">
+            -->
+        </section>
+        <section class="advantage">
+            <h2>Почему вам стоит купить рекламное место на нашем сайте?</h2>
+            <ul class="advantage-list">
+                <!-- главное тут - выбор ul/li, а остальное - на вкус и цвет -->
+                <!-- Сделели как dl/dt/dd - сомнительно -->
+                <li class="advantage-item">
+                    <span>Более 100 000</span>посетителей в месяц
+                </li>
+                <li class="advantage-item">
+                    <p><span>Более 25 000</span>проданных товаров в месяц</p>
+                </li>
+                <li class="advantage-item">
+                    <p><span>Более 200 000</span>просмотров в месяц</p>
+                </li>
+            </ul>
+            <dl class="advantage-stat-list">
+                <!-- можно в div сразу, можно позже -->
+                <!-- !!! зачем поменяли местами  -->
+                <dt>7</dt>
+                <dd>Крупных городов РФ</dd>
+                <dt>7,61%</dt>
+                <dd>Хорошая конверсия в продажи от уникальных посетителей</dd>
+                <dt>26,16%</dt>
+                <dd>Низкий показатель отказов</dd>
+                <dt>4,9%</dt>
+                <dd>Высокий уровень SCAT (по 5-ти бальной шкале)</dd>
+                <dt>4,2</dt>
+                <dd>Отличный рейтинг на Flamp</dd>
+                <dt>5,452</dt>
+                <dd>Значительная глубина просмотров</dd>
+                <dt>5:46</dt>
+                <dd>Среднее пребывание на сайте в минутах</dd>
+                <dt>20 100</dt>
+                <dd>Зарегистрированных пользователей</dd>
+            </dl>
+        </section>
+        <section class="city-stat">
+            <h2>Показатели по городам</h2>
+            <!--  можно набор кнопок, но  универсальнее - список городов со ссылками, select  не подходит -->
+            <ul class="stat-city-list">
+                <li class="stat-city-item"><a href="#">Все города</a></li>
+                <li class="stat-city-item"><a href="#">Екатеринбург</a></li>
+                <li class="stat-city-item"><a href="#">Санкт-Петербург</a></li>
+                <li class="stat-city-item"><a href="#">Новосибирск</a></li>
+                <li class="stat-city-item"><a href="#">Самара</a></li>
+            </ul>
+            <table>
+                <tr>
+                    <th colspan="3">Возраст пользователей</th>
+                    <!-- таблица это или не таблица при верстке может зависеть от того, как данные будут отдаваться бэкэендом. но по сути - таблица -->
+                </tr>
+                <tr>
+                    <td>18‑24 года</td>
+                    <td>
+                        <div></div>
+                    </td>
+                    <td>9%</td>
+                </tr>
+                <tr>
+                    <td>25‑34 года</td>
+                    <td>
+                        <div></div>
+                    </td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>35‑44 года</td>
+                    <td>
+                        <div></div>
+                    </td>
+                    <td>23%</td>
+                </tr>
+                <tr>
+                    <td>45-54 года</td>
+                    <td>
+                        <div></div>
+                    </td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>55 лет и старше</td>
+                    <td>
+                        <div></div>
+                    </td>
+                    <td>12%</td>
+                </tr>
+            </table>
+            <dl class="city-stat-desc">
+                <dt>cреднее время пребывания на сайте</dt>
+                <!-- time ? /и везде с параметрами про время?/ -->
+                <dd>5:46 минут</dd>
+                <dt>глубина просмотра за время работы</dt>
+                <dd>7:39 минут</dd>
+                <dt>Отказы за все время работы сайта</dt>
+                <dd>26,16%</dd>
+            </dl>
+            <section>
+                <!-- наличие section сомнительно, но пусть будет и если есть section, то логичнее использовать h3 
+            <p>Заказать рекламу в этом городе</p> -->
+            <h3>Заказать рекламу в этом городе</h3>
+
+            <form action="#" method="post">
+                <label for="city-phone-id" class="visually-hidden">Номер телефона</label>
+                <input type="tel" name="city-phone" id="city-phone-id" placeholder="+7">
+                <button type="submit" name="city-phone-submit" id="city-phone-submit-id">Заказать</button>
+            </form>
+        </section>
+        </section>
+
+        <section class="place-rating">
+            <h2>Рейтинг рекламных площадок</h2>
+            <p>Рейтинг, составленный Jandex в 2020 году показывает, что эффективность рекламы на сайтах растет с каждым
+                годом. Яркая и запоминающаяся реклама на сайте охватывает больший процент целевой аудитории и показывает
+                отличную конверсию по сравнению с другими рекламными площадками.</p>
+            <table class="place-rating-table">
+                <tr>
+                    <th>2020</th>
+                    <th>2015</th>
+                    <th>Площадка</th>
+                    <th colspan="2">Процент пользователей</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>Сайты</td>
+                    <td>82%</td>
+                    <td>Рост показателя</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>Социальные сети</td>
+                    <td>80%</td>
+                    <td>Рост показателя</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>Наружная реклама</td>
+                    <td>62%</td>
+                    <td>Падение показателя</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>Телевидение</td>
+                    <td>40%</td>
+                    <td>Падение показателя</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>Реклама на радио</td>
+                    <td>35%</td>
+                    <td>Рост показателя</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>Пресса</td>
+                    <td>30%</td>
+                    <td>Падение показателя</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>Промо-акции</td>
+                    <td>15%</td>
+                    <td>Падение показателя</td>
+                </tr>
+            </table>
+        </section>
+        <section class="place-market">
+            <h2>Рекламные места</h2>
+            <ul class="place-list">
+                <li>
+                    <h3>Преимущества рекламного места №1</h3>
+                    <p>Баннер на главной странице</p>
+                    <ul>
+                        <li>виден при открытии главной страницы</li>
+                        <li>есть возможность настроить отдельную страницу для всего ассортимента товаров при клике на
+                            баннер</li>
+                        <li>хорошо кликабельный баннер</li>
+                    </ul>
+                    <img src="img/place-img-1.png" alt="Вертикальный баннер справа" width="554" height="294">
+                </li>
+                <li>
+                    <h3>Преимущества рекламного места №2</h3>
+                    <p>Баннер на главной странице</p>
+                    <ul>
+                        <li>виден при открытии главной страницы</li>
+                        <li>самый высокий показатель кликабельности на рекламу</li>
+                        <li>есть возможность настроить отдельную страницу для всего ассортимента товаров при клике на
+                            баннер</li>
+                    </ul>
+                    <img src="img/place-img-2.png" alt="горизонтальный баннер между блоками информации" width="554"
+                        height="294">
+                </li>
+                <li>
+                    <h3>Преимущества рекламного места №3</h3>
+                    <p>Баннер на главной странице</p>
+                    <ul>
+                        <li>попадает в поле зрения пользователя сразу при переходе на страницу</li>
+                        <li>вмещает больший объем информации</li>
+                        <li>есть возможность кастомизации оформления на протяжении всего срока действия рекламы</li>
+                    </ul>
+                    <img src="img/place-img-3.png" alt="горизонтальный баннер сверху" width="554" height="294">
+                </li>
+            </ul>
+            <!-- наличие section сомнительно, но пусть будет и если есть section, то логичнее использовать h3 
+            <p>Заказать рекламное место</p> -->
+            <section>
+            <h3>Заказать рекламное место</h3>
+            <form action="#" method="post">
+                <label for="place-phone-id" class="visually-hidden">Номер телефона</label>
+                <input type="tel" name="place-phone" id="place-phone-id" placeholder="+7">
+                <button type="submit" name="place-phone-submit" id="place-phone-submit-id">Заказать</button>
+            </form>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <a href="tel:+799966577866">+7 (999) 665 778 66</a>
+        <a href="mailto:info@marketing.ru">info@marketing.ru</a>
+    </footer>
+</body>
+
+</html>
