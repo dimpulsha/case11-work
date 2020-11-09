@@ -34,15 +34,15 @@
                 <input type="tel" name="promo-phone" id="promo-phone-id" placeholder="+7">
                 <button type="submit" name="promo-phone-submit" id="promo-phone-submit-id">Заказать</button>
             </form>
-            <!-- рисунок на странном месте  - выше формы
+            <!-- рисунок  - выше формы. У меня был ниже
             <img src="img/place-img-1.png" alt="Рекламный блок справа" width="554" height="294">
             -->
         </section>
         <section class="advantage">
             <h2>Почему вам стоит купить рекламное место на нашем сайте?</h2>
-            <ul class="advantage-list">
-                <!-- главное тут - выбор ul/li, а остальное - на вкус и цвет -->
+            <!-- главное тут - выбор ul/li, а остальное - на вкус и цвет -->
                 <!-- Сделели как dl/dt/dd - сомнительно -->
+            <ul class="advantage-list">               
                 <li class="advantage-item">
                     <span>Более 100 000</span>посетителей в месяц
                 </li>
@@ -55,7 +55,7 @@
             </ul>
             <dl class="advantage-stat-list">
                 <!-- можно в div сразу, можно позже -->
-                <!-- !!! зачем поменяли местами  -->
+                <!-- !!! зачем поменяли местами  значения из dt и dd-->
                 <dt>7</dt>
                 <dd>Крупных городов РФ</dd>
                 <dt>7,61%</dt>
@@ -92,35 +92,35 @@
                 <tr>
                     <td>18‑24 года</td>
                     <td>
-                        <div></div>
+                        <meter id="age-category-1" min="0" max="100" value="9">9%</meter> 
                     </td>
                     <td>9%</td>
                 </tr>
                 <tr>
                     <td>25‑34 года</td>
                     <td>
-                        <div></div>
+                        <meter id="age-category-2" min="0" max="100" value="40">40%</meter>
                     </td>
                     <td>40%</td>
                 </tr>
                 <tr>
                     <td>35‑44 года</td>
                     <td>
-                        <div></div>
+                        <meter id="age-category-3" min="0" max="100" value="23">23%</meter>
                     </td>
                     <td>23%</td>
                 </tr>
                 <tr>
                     <td>45-54 года</td>
                     <td>
-                        <div></div>
+                        <meter id="age-category-4" min="0" max="100" value="15">15%</meter>
                     </td>
                     <td>15%</td>
                 </tr>
                 <tr>
                     <td>55 лет и старше</td>
                     <td>
-                        <div></div>
+                        <meter id="age-category-5" min="0" max="100" value="12">12%</meter>
                     </td>
                     <td>12%</td>
                 </tr>
@@ -164,49 +164,77 @@
                     <td>3</td>
                     <td>Сайты</td>
                     <td>82%</td>
-                    <td>Рост показателя</td>
+                    <td>
+                        <span class="measure-increase">
+                        <span class="visually-hidden">Рост показателя</span>
+                      </span>
+                    </td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>4</td>
                     <td>Социальные сети</td>
                     <td>80%</td>
-                    <td>Рост показателя</td>
+                    <td>
+                        <span class="measure-increase">
+                            <span class="visually-hidden">Рост показателя</span>
+                          </span>
+                    </td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>2</td>
                     <td>Наружная реклама</td>
                     <td>62%</td>
-                    <td>Падение показателя</td>
+                    <td>
+                        <span class="measure-decrease">
+                            <span class="visually-hidden">Падение показателя</span>
+                          </span>
+                    </td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>1</td>
                     <td>Телевидение</td>
                     <td>40%</td>
-                    <td>Падение показателя</td>
+                    <td>
+                        <span class="measure-decrease">
+                            <span class="visually-hidden">Падение показателя</span>
+                          </span>
+                    </td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>7</td>
                     <td>Реклама на радио</td>
                     <td>35%</td>
-                    <td>Рост показателя</td>
+                    <td>
+                        <span class="measure-increase">
+                            <span class="visually-hidden">Рост показателя</span>
+                          </span>
+                    </td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td>5</td>
                     <td>Пресса</td>
                     <td>30%</td>
-                    <td>Падение показателя</td>
+                    <td>
+                        <span class="measure-decrease">
+                            <span class="visually-hidden">Падение показателя</span>
+                          </span>
+                    </td>
                 </tr>
                 <tr>
                     <td>7</td>
                     <td>6</td>
                     <td>Промо-акции</td>
                     <td>15%</td>
-                    <td>Падение показателя</td>
+                    <td>
+                        <span class="measure-decrease">
+                            <span class="visually-hidden">Падение показателя</span>
+                          </span>
+                    </td>
                 </tr>
             </table>
         </section>
